@@ -1143,6 +1143,11 @@ input:checked + .toggle-bg {
   margin-bottom: 5rem;
 }
 
+.my-10 {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -1165,6 +1170,14 @@ input:checked + .toggle-bg {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.me-10 {
+  margin-inline-end: 2.5rem;
+}
+
+.ms-4 {
+  margin-inline-start: 1rem;
 }
 
 .block {
@@ -1373,10 +1386,26 @@ input:checked + .toggle-bg {
   justify-content: space-between;
 }
 
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-items-center {
+  justify-items: center;
+}
+
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-hidden {
@@ -1505,6 +1534,10 @@ input:checked + .toggle-bg {
   padding: 1rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -1535,6 +1568,11 @@ input:checked + .toggle-bg {
   padding-bottom: 0.75rem;
 }
 
+.px-10 {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
 .pe-4 {
   padding-inline-end: 1rem;
 }
@@ -1547,8 +1585,20 @@ input:checked + .toggle-bg {
   padding-top: 1.5rem;
 }
 
+.pe-10 {
+  padding-inline-end: 2.5rem;
+}
+
+.ps-24 {
+  padding-inline-start: 6rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+.align-middle {
+  vertical-align: middle;
 }
 
 .text-4xl {

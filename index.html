@@ -19,8 +19,8 @@
 <!-- drawer init and toggle -->
 
 <div class="grid grid-cols-2 pe-4 ">
-    <img id="starBtn" src="./assets/star.png" alt="favorites">
-    <button id="getfavoritesBtn" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example" style="width: 155px;" aria-controls="drawer-example">
+    <img id="starBtn" src="./assets/star.png" class="px-10" alt="favorites">
+    <button id="getfavoritesBtn" class=" text-white items-end bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 justify-self-end me-10" type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example" style="width: 155px;" aria-controls="drawer-example">
         favorites List
         </button>
  </div>
@@ -29,14 +29,14 @@
  <!-- drawer component -->
  <div class="text-center">
  <div id="drawer-example" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-fu ll w-80 dark:bg-gray-800" style="background-color: #1F2937;" tabindex="-1" aria-labelledby="drawer-label">
-    <h5 id="drawer-label" class="inline-flex items-center mb-4 text-base font-semibold text-4xl font-black text-gray-900 dark:text-white">Favorites</h5>
+    <h5 id="drawer-label" class="justify-end inline-flex items-center mb-4 text-gray-900 dark:text-white" style="font-size: 48px; color: #ffff;">Favorites</h5>
     <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
        <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
           <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
        </svg>
     </button>
     
-        <a id="getFavoritesDiv" class=" p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+        <a id="getFavoritesDiv" class=" p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group" style="font-size: 48px; color: #ffff;">
         </a>
     </div>
  </div>
@@ -44,14 +44,15 @@
 
         <div class="flex flex-col px-5 m-10">
           <img id="pokemonImg"
-            class="w-24 h-24 mb-3 rounded-full shadow-lg flex justify-center"
+            class="w-24 h-24 mb-3 rounded-full shadow-lg mx-auto"
             alt="Bonnie image"
           />
-          
-          <h5 id="pokemonTxt" class="mb-1 text-xl flex justify-center font-medium text-gray-900 dark:text-white" style="font-size: 48px; color: #ffff; margin-top: 35px; margin-bottom: 33px;">
-            Pokimon Name
+          <div class="flex flex-row justify-center">
+          <h5 id="pokemonTxt" class="font-medium text-gray-900 dark:text-white" style="font-size: 48px; color: #ffff;">
+            Pokemon Name
           </h5>
-          <h5 id="pokemonIdTxt" class="flex justify-center" style="font-size: 48px; color: #ffff;"> Id: 000</h5>
+          <h5 id="pokemonIdTxt" class="ms-4" style=" font-size: 48px; color: #ffff;"> Id: 000</h5>
+        </div>
           <hr>
           <span id="EvolutionaryTxt" style="font-size: 20px; color: #ffff; margin-top: 35px; margin-bottom: 33px;" class="text-sm text-gray-500 dark:text-gray-400"
             >Evolutionary Paths</span
@@ -67,13 +68,13 @@
           <hr>
 
 
-          <div class="flex mt-4 md:mt-6 float-bottom">
+          <div class="flex flex-row justify-evenly my-10">            
             <a
               id="randomPokemonBtn"
-              class="inline-flex flex flo items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="width: 299px; height: 81px; text-align: center;"
+              class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" style="width: 299px; height: 81px; text-align: center; font-size: 20px;"
               >random pokemon</a
             >
-            <input type="text" placeholder="Search" class="flex flex-row" id="SearchInput" style="width: 278px;  height: 81px;">
+            <input type="text" placeholder="Search" class="flex justify-center ps-24" id="SearchInput" style="width: 278px;  height: 81px; font-size: 20px;">
           </div>
         </div>
       </div>

@@ -129,11 +129,13 @@ randomPokemonBtn.addEventListener("click", async () => {
   console.log(pokemon.species.url);
   const spec = await fetch(pokemon.species.url);
   const species = await spec.json();
+
+
   console.log(species);
   const getspec = await fetch(species.evolution_chain.url);
   const getspecies = await getspec.json();
     console.log(getspecies);
-    EvolutionaryTxt.textContent = "Evolutionary Paths : " + getspecies.chain.species.name + " > " + getspecies.chain.evolves_to[0].species.name + " > " + getspecies.chain.evolves_to[0].species.name
+    EvolutionaryTxt.textContent = "Evolutionary Paths : " + getspecies.chain.species.name + " > " + getspecies.chain.evolves_to[0].species.name + " > " + getspecies.chain.evolves_to[0].evolves_to[0].species.name;
   // .chain.evolves_to[0].evolution_details.map(species => species.name)
 
 //   console.log(getspecies);
@@ -196,12 +198,7 @@ SearchInput.addEventListener("keydown", async (event) => {
     const getspec = await fetch(species.evolution_chain.url);
     const getspecies = await getspec.json();
     // .chain.evolves_to[0].evolution_details.map(species => species.name)
-    console.log(getspecies);
-    EvolutionaryTxt.textContent =
-      "Evolutionary Paths : " +
-      getspecies.chain.evolves_to
-        .map((evolves_to) => evolves_to.species.name)
-        .join(" > ");
+    EvolutionaryTxt.textContent = "Evolutionary Paths : " + getspecies.chain.species.name + " > " + getspecies.chain.evolves_to[0].species.name + " > " + getspecies.chain.evolves_to[0].evolves_to[0].species.name;
 
     // pokemon.moves.forEach(move => {
     //     // let name = move.name
