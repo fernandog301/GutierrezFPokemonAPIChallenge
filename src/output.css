@@ -1129,14 +1129,6 @@ input:checked + .toggle-bg {
   z-index: 50;
 }
 
-.float-start {
-  float: inline-start;
-}
-
-.float-end {
-  float: inline-end;
-}
-
 .m-10 {
   margin: 2.5rem;
 }
@@ -1167,24 +1159,12 @@ input:checked + .toggle-bg {
   margin-bottom: 1rem;
 }
 
-.ms-3 {
-  margin-inline-start: 0.75rem;
-}
-
 .mt-2 {
   margin-top: 0.5rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
-}
-
 .mt-4 {
   margin-top: 1rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .block {
@@ -1231,6 +1211,10 @@ input:checked + .toggle-bg {
   height: 1rem;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -1245,10 +1229,6 @@ input:checked + .toggle-bg {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-44 {
-  height: 11rem;
 }
 
 .w-1\/2 {
@@ -1281,14 +1261,6 @@ input:checked + .toggle-bg {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-sm {
-  max-width: 24rem;
-}
-
-.max-w-md {
-  max-width: 28rem;
 }
 
 .flex-1 {
@@ -1411,20 +1383,12 @@ input:checked + .toggle-bg {
   overflow: hidden;
 }
 
-.overflow-scroll {
-  overflow: scroll;
-}
-
 .overflow-x-auto {
   overflow-x: auto;
 }
 
 .overflow-y-auto {
   overflow-y: auto;
-}
-
-.whitespace-nowrap {
-  white-space: nowrap;
 }
 
 .rounded-full {
@@ -1569,20 +1533,6 @@ input:checked + .toggle-bg {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
-
-.px-12 {
-  padding-left: 3rem;
-  padding-right: 3rem;
-}
-
-.pb-10 {
-  padding-bottom: 2.5rem;
 }
 
 .pe-4 {

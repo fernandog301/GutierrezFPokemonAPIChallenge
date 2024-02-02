@@ -132,8 +132,8 @@ randomPokemonBtn.addEventListener("click", async () => {
   console.log(species);
   const getspec = await fetch(species.evolution_chain.url);
   const getspecies = await getspec.json();
-    console.log(getspecies.chain.evolves_to.species.name)
-    EvolutionaryTxt.textContent = getspecies.chain.species.name + " > " + getspecies.chain.evolves_to[0].species.name + " > " +
+    console.log(getspecies);
+    EvolutionaryTxt.textContent = "Evolutionary Paths : " + getspecies.chain.species.name + " > " + getspecies.chain.evolves_to[0].species.name + " > " + getspecies.chain.evolves_to[0].species.name
   // .chain.evolves_to[0].evolution_details.map(species => species.name)
 
 //   console.log(getspecies);
