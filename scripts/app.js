@@ -22,7 +22,6 @@ let defaultImg;
 let cardShinnyImg;
 
 starBtn.addEventListener("click", () => {
-
     let favorites = getLocalStorage();
   if(!favorites.includes(pokemon.name)){
     saveToLocalStorage(pokemon.name);
@@ -97,6 +96,7 @@ const pokemonApi = async (pokemon) => {
   return data;
 };
 
+pokemonApi();
 // const function locationApi(loc){
 //     pokemon = await pokemonApi(event.target.value);
 
@@ -155,7 +155,7 @@ randomPokemonBtn.addEventListener("click", async () => {
 
   const locat = await fetch(pokemon.location_area_encounters);
   const location = await locat.json();
-  if(location.legth ==0){
+  if(location.length == 0){
   locationTxt.textContent = "N/A";
   }else{
     locationTxt.textContent =
